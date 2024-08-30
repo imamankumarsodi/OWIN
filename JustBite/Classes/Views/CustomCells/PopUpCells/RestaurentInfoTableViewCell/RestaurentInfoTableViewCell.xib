@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurentInfoTableViewCell" rowHeight="81.5" id="KGk-i7-Jjw" customClass="RestaurentInfoTableViewCell" customModule="JustBite" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-II-TIq">
+                        <rect key="frame" x="91" y="10" width="125" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csO-jC-5fR">
+                        <rect key="frame" x="74" y="33" width="226" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2H-N3-D6O" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="221" y="13" width="79" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ETl-da-vtr"/>
+                            <constraint firstAttribute="width" constant="79" id="mdg-Gt-sJt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_b" translatesAutoresizingMaskIntoConstraints="NO" id="j7x-el-9Mf">
+                        <rect key="frame" x="16" y="10" width="38" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="InR-Zf-0Kk"/>
+                            <constraint firstAttribute="width" secondItem="j7x-el-9Mf" secondAttribute="height" multiplier="1:1" id="TJs-12-R7q"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j7x-el-9Mf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="41E-r2-Dqr"/>
+                    <constraint firstItem="Q2H-N3-D6O" firstAttribute="centerY" secondItem="eRS-II-TIq" secondAttribute="centerY" id="Iqy-j3-MyF"/>
+                    <constraint firstItem="csO-jC-5fR" firstAttribute="trailing" secondItem="Q2H-N3-D6O" secondAttribute="trailing" id="ama-CA-fEf"/>
+                    <constraint firstAttribute="bottom" secondItem="csO-jC-5fR" secondAttribute="bottom" constant="10" id="di3-2Z-YYu"/>
+                    <constraint firstItem="csO-jC-5fR" firstAttribute="top" secondItem="eRS-II-TIq" secondAttribute="bottom" constant="2" id="ej3-n6-p34"/>
+                    <constraint firstItem="j7x-el-9Mf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ewL-gm-BOk"/>
+                    <constraint firstAttribute="trailing" secondItem="Q2H-N3-D6O" secondAttribute="trailing" constant="20" id="hRO-LI-3tO"/>
+                    <constraint firstItem="csO-jC-5fR" firstAttribute="leading" secondItem="eRS-II-TIq" secondAttribute="leading" id="hVy-F8-Grd"/>
+                    <constraint firstItem="Q2H-N3-D6O" firstAttribute="leading" secondItem="eRS-II-TIq" secondAttribute="trailing" constant="5" id="rnq-er-awE"/>
+                    <constraint firstItem="eRS-II-TIq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tA8-Zz-GFs"/>
+                    <constraint firstItem="eRS-II-TIq" firstAttribute="leading" secondItem="j7x-el-9Mf" secondAttribute="trailing" constant="10" id="vpC-Lr-J4r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSubTitle" destination="csO-jC-5fR" id="MaJ-8h-dYY"/>
+                <outlet property="lblTitle" destination="eRS-II-TIq" id="jlF-Fr-gJc"/>
+                <outlet property="viewRating" destination="Q2H-N3-D6O" id="zVR-61-xNU"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_b" width="45" height="45"/>
+    </resources>
+</document>
